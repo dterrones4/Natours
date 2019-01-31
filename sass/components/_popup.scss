@@ -21,6 +21,10 @@
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(.25);
 		transition: all .4s .2s;
+
+		@include respond(phone){
+			width: 95%;
+		}
 	}
 
 	&__left{
