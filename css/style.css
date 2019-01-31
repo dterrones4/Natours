@@ -1,7 +1,7 @@
 /*
 @600px phone
 600-900px Tablet portrat mode
-900-1200px Tabled Landscape Mode
+900-1200px Tablet Landscape Mode
 1200-1800px Desktop (normal styles)
 1800+ Large Desktop
 
@@ -478,6 +478,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -542,14 +546,33 @@ body {
   .popup__left {
     width: 33.333333333%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        width: 100%;
+        display: table-footer-group; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: block;
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__img {
+        width: 50%;
+        display: inline-block;
+        height: 18em; } }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        width: 50%;
+        display: inline-block;
+        height: 16em; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
