@@ -565,7 +565,8 @@ body {
       .popup__right {
         width: 100%;
         display: block;
-        text-align: center; } }
+        text-align: center;
+        padding: 1rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%; }
